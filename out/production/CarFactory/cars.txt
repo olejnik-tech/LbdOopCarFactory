@@ -1,0 +1,3 @@
+[MotorA, SuspensionB, BreaksC]
+[MotorB, SuspensionA, BreaksA]
+[MotorC, SuspensionC, BreaksB]
