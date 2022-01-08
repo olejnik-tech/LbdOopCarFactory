@@ -5,6 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
+/**
+ * Data processing
+ */
 public class FileService {
 
     private static String[] symbolsToRemove = {"[", "]"};

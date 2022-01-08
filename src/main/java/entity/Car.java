@@ -4,6 +4,9 @@ import enums.Breaks;
 import enums.Engine;
 import enums.Suspension;
 
+/**
+ * Car Entity
+ */
 public class Car {
 
     public Engine engine;

@@ -4,6 +4,10 @@ import enums.Breaks;
 import enums.Engine;
 import enums.Suspension;
 
+/**
+ * Car Attribute Factory
+ * Used by Car Factory to determine specific attributes
+ */
 public class CarAttributeService {
 
     protected static Engine decideEngine(String engineString){
