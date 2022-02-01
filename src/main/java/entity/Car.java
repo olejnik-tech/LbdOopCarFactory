@@ -13,6 +13,9 @@ public class Car {
     public Suspension suspension;
     public Breaks breaks;
 
+    public Wheels wheels;
+    public Lights lights;
+
     public Engine getEngine() {
         return engine;
     }
@@ -37,12 +40,30 @@ public class Car {
         this.breaks = breaks;
     }
 
+    public Wheels getWheels() {
+        return wheels;
+    }
+
+    public void setWheels(Wheels wheels) {
+        this.wheels = wheels;
+    }
+
+    public Lights getLights() {
+        return lights;
+    }
+
+    public void setLights(Lights lights) {
+        this.lights = lights;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
                 "engine=" + engine +
                 ", suspension=" + suspension +
                 ", breaks=" + breaks +
+                ", wheels=" + wheels +
+                ", lights=" + lights +
                 '}';
     }
 }

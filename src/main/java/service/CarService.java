@@ -1,6 +1,8 @@
 package service;
 
 import entity.Car;
+import entity.Lights;
+import entity.Wheels;
 
 import java.io.IOException;
 import java.util.List;
@@ -51,6 +53,22 @@ public class CarService {
             car.setEngine(decideEngine(parsedLine[0]));
             car.setSuspension(decideSuspension(parsedLine[1]));
             car.setBreaks(decideBreaks(parsedLine[2]));
+
+            // staticly add new attributes (I am too lazy to edit file format/reading etc.
+
+            // Wheel setup
+            Wheels wheels = new Wheels();
+            wheels.setNumOfWheels(4);
+            wheels.setSize("16");
+
+            car.setWheels(wheels);
+
+            // Lights setup
+            Lights lights = new Lights();
+            lights.setNumberOfLights(6);
+            lights.setTypeOfLights("Led");
+
+            car.setLights(lights);
 
             // Write built car into car array
             cars[i] = car;
